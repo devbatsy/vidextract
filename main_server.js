@@ -251,7 +251,7 @@ async function processSnapChatInfo(data,ws)
 
 async function getSnapChatVideoLink(url)
 {
-    const browser = await puppeteer.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,defaultViewport:false});
+    const browser = await puppeteer.launch({headless:true,defaultViewport:false});
     //C:\Program Files\Google\Chrome\Application\chrome.exe
     const page = await browser.newPage();
     await page.goto(url);
